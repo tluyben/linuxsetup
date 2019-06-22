@@ -11,3 +11,5 @@ cp -r .vimrc ~/
 
 sudo cp i3status.conf /etc/
 cp config ~/.config/i3/
+
+i3-msg reload
