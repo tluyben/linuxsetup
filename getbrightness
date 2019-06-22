@@ -1,0 +1,3 @@
+#!/bin/sh
+
+echo `xrandr --current --verbose | grep -m 1 'Brightness:' | cut -f2- -d:`
