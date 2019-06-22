@@ -51,5 +51,12 @@ if __name__ == '__main__':
         res = subprocess.check_output(['/home/tluyben/getbrightness']).strip()
         j.insert(0, {'full_text' : 'B: %s' % res, 'name' : 'brightness'})
 
+        res = subprocess.check_output(['/home/tluyben/getvolume']).strip()
+        j.insert(0, {'full_text' : 'V: %s' % res, 'name' : 'volume'})
+
+
+        res = subprocess.check_output(['/home/tluyben/getmute']).strip()
+        j.insert(0, {'full_text' : 'M: %s' % res, 'name' : 'mute'})
+
         # and echo back new encoded json
         print_line(prefix+json.dumps(j))

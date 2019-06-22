@@ -11,6 +11,10 @@ cp customstatus ~/
 chmod 755 ~/customstatus
 cp getbrightness ~/
 chmod 755 ~/getbrightness 
+cp getvolume ~/
+chmod 755 ~/getvolume
+cp getmute ~/
+chmod 755 ~/getmute 
 
 cp -r .vimrc ~/
 
