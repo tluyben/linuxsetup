@@ -15,6 +15,8 @@ cp getvolume ~/
 chmod 755 ~/getvolume
 cp getmute ~/
 chmod 755 ~/getmute 
+cp getfreqs ~/
+chmod 755 ~/getfreqs
 
 cp -r .vimrc ~/
 
