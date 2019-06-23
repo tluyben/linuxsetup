@@ -149,8 +149,8 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-bindsym XF86MonBrightnessUp exec /usr/local/bin/brightness + eDP-1
-bindsym XF86MonBrightnessDown exec /usr/local/bin/brightness - eDP-1
+bindsym XF86MonBrightnessUp exec /usr/local/bin/brightness +
+bindsym XF86MonBrightnessDown exec /usr/local/bin/brightness -
 
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl -- set-sink-volume 0 +5% #increase sound volume
 bindsym XF86AudioLowerVolume exec --no-startup-id pactl -- set-sink-volume 0 -5% #decrease sound volume

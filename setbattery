@@ -1,0 +1,4 @@
+#!/bin/sh
+
+BAT=$(ls /sys/class/power_supply/|grep -i bat)
+sed -i "s/BAT1/$BAT/g" /etc/i3status.conf

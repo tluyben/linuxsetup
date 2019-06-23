@@ -1,10 +1,10 @@
 #!/bin/sh
 
-apt install -y i3 
+sudo apt install i3 
 
-cd /tmp; git clone git@github.com:philippnormann1337/xrandr-brightness-script.git; cd -
+#cd /tmp; git clone git@github.com:philippnormann1337/xrandr-brightness-script.git; cd -
 
-sudo cp /tmp/xrandr-brightness-script/brightness.sh /usr/local/bin/brightness
+sudo cp brightness /usr/local/bin/
 sudo chmod 755 /usr/local/bin/brightness
 
 cp customstatus ~/
@@ -21,6 +21,9 @@ chmod 755 ~/getfreqs
 cp -r .vimrc ~/
 
 sudo cp i3status.conf /etc/
+
+sudo ./setbattery
+
 cp config ~/.config/i3/
 
 i3-msg reload
