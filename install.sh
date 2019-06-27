@@ -1,6 +1,8 @@
 #!/bin/sh
 
 sudo apt install i3 
+sudo apt cpufrequtils
+
 
 #cd /tmp; git clone git@github.com:philippnormann1337/xrandr-brightness-script.git; cd -
 
