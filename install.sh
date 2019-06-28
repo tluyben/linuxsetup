@@ -26,6 +26,8 @@ chmod 755 ~/getmute
 cp getfreqs ~/
 chmod 755 ~/getfreqs
 
+
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp -r .vimrc ~/
 
 sudo cp i3status.conf /etc/
