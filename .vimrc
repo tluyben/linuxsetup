@@ -109,4 +109,6 @@ let g:syntastic_check_on_open = 1
 let g:syntastic_check_on_wq = 0
 
 set backspace=indent,eol,start
-
+set tabstop=4
+set shiftwidth=4
+set expandtab
