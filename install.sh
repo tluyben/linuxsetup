@@ -9,6 +9,7 @@ sudo apt install vim
 sudo apt install i3 
 sudo apt cpufrequtils
 
+mkdir ~/.vim
 
 #cd /tmp; git clone git@github.com:philippnormann1337/xrandr-brightness-script.git; cd -
 
@@ -37,3 +38,5 @@ sudo ./setbattery
 cp config ~/.config/i3/
 
 i3-msg reload
+
+echo Start vim and run :PlugInstall
