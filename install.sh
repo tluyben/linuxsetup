@@ -4,10 +4,12 @@
 
 sudo add-apt-repository ppa:jonathonf/vim
 sudo apt update
-sudo apt install vim
+sudo apt install -y vim
 
-sudo apt install i3 
-sudo apt cpufrequtils
+sudo apt install -y i3 
+sudo apt -y cpufrequtils
+sudo apt -y python
+
 
 mkdir ~/.vim
 
@@ -38,5 +40,10 @@ sudo ./setbattery
 cp config ~/.config/i3/
 
 i3-msg reload
+killall i3bar
+for c in $(i3-msg -t get_bar_config | python -c \
+      'import json,sys;print("\n".join(json.load(sys.stdin)))'); do \
+    (i3bar --bar_id=$c >i3bar.$c.log 2>&1) & \
+done;
 
 echo Start vim and run :PlugInstall
