@@ -46,4 +46,9 @@ for c in $(i3-msg -t get_bar_config | python -c \
     (i3bar --bar_id=$c >i3bar.$c.log 2>&1) & \
 done;
 
+# X2xx 
+# switch off the horrible touchpad, if we have one
+bash disabletouch 
+cat disabletouch >> ~/.bashrc 
+
 echo Start vim and run :PlugInstall

@@ -1,0 +1,2 @@
+
+xinput list|grep TouchPad|awk '{print $6}'|sed -e 's/id=//'|tr --delete '\n'|xargs -0 xinput --disable
