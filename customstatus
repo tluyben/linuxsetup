@@ -60,5 +60,8 @@ if __name__ == '__main__':
         res = subprocess.check_output(['/home/tluyben/getfreqs']).strip()
         j.insert(0, {'full_text' : 'F: %s' % res, 'name' : 'freqs'})
 
+        res = subprocess.check_output(['/home/tluyben/getmem']).strip()
+        j.insert(0, {'full_text' : 'R: %s' % res, 'name' : 'freemem'})
+
         # and echo back new encoded json
         print_line(prefix+json.dumps(j))
