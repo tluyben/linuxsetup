@@ -10,6 +10,7 @@ sudo apt install -y i3
 sudo apt -y cpufrequtils
 sudo apt -y python
 
+cp .emacs ~/
 
 mkdir ~/.vim
 
