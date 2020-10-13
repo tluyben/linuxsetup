@@ -29,7 +29,8 @@ cp getmute ~/
 chmod 755 ~/getmute 
 cp getfreqs ~/
 chmod 755 ~/getfreqs
-
+cp getmem ~/
+chmod 755 ~/getmem
 
 curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 cp -r .vimrc ~/
@@ -49,7 +50,8 @@ done;
 
 # X2xx 
 # switch off the horrible touchpad, if we have one
-bash disabletouch 
-cat disabletouch >> ~/.bashrc 
+#bash disabletouch 
+#cat disabletouch >> ~/.bashrc 
 
 echo Start vim and run :PlugInstall
+echo If anything is wrong i3bar,just check the abvoe killall i3bar + startup for the logs of i3bar to see what's wrong exactly
