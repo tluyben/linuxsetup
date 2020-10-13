@@ -7,8 +7,8 @@ sudo apt update
 sudo apt install -y vim
 
 sudo apt install -y i3 
-sudo apt -y cpufrequtils
-sudo apt -y python
+sudo apt install -y cpufrequtils
+sudo apt install -y python curl
 
 cp .emacs ~/
 
