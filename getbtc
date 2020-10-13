@@ -1,0 +1,13 @@
+#!/bin/sh
+
+T=/tmp/btcrate
+S=$(($(date +%s) - $(date +%s -r $T)))
+D=$((S / 60)) 
+
+if [ "$D" -gt "5" ]; then 
+    `curl -s https://bitpay.com/api/rates|jq -r '.[]|select(.code=="USD").rate' > $T`
+    
+fi
+
+echo `cat $T`
+
